@@ -14,7 +14,7 @@ const InfiniteScroll = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://jsonplaceholder.typicode.com/posts?_limit=10&_page=${page}`
+        `https://jsonplaceholder.typicode.com/posts?_limit=15&_page=${page}`
       );
       const data = await response.json();
       setItems((prevItems) => [...prevItems, ...data]);
